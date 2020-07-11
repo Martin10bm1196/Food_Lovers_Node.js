@@ -1,0 +1,72 @@
+.grid__container  {
+    
+    &.header{  
+        background: black;
+        width: auto;
+        height:177px;     
+        display: table;
+    }
+    .menuBot {
+        list-style: none;
+        padding: 0;
+        background: black;
+        width: 90%;
+        margin: auto;
+    }
+   
+    
+
+}
+
+.__navTop{
+        
+    display: flex! important;
+  
+ }
+.__navTop--logo{
+    width: 80%;
+}
+.__navTop--login{
+    width: 20%;
+    text-align: center;
+  
+}
+.__login--btn {
+    font-size: 25px;
+    color: white;
+}
+
+.__navTop--logo{
+    background: white;
+    background-image: url('../../imgs/logo4.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+.menuBot li {
+   display: inline-block;
+   text-align: center;
+}
+
+.menuBot li a{
+
+    text-decoration: none;
+    color: white; 
+    display: block;
+
+}
+
+.menuBot li a:hover{
+    background: white;
+    color: black;
+
+}
+.menuTop li a:hover{
+    background: white;
+    color: black;
+}
+
+
+

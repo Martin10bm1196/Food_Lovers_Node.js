@@ -1,0 +1,53 @@
+
+
+  <%- include ('masterPage/header') %>
+
+
+  
+  <article class="grid_containerUser ">
+    <h3 class="title">Registrate</h3>
+  
+    <section class="container container__color container__login container--sizeCheckIn ">
+    
+  
+      <form action="/checkin" method="post" class="form">
+        
+        
+        
+        <div class="form__size">
+          <label class="form__checkIn" for="disabledInput">Cedula:</label>
+          <input type="text" name="cedula" value="" placeholder="" class="input">
+        </div>
+  
+        <div class="form__size">
+          <label class="form__checkIn" for="disabledInput">Nombre completo:</label>
+          <input type="text" name="nombreCompleto" value="" placeholder="Juan Perez" class="input">
+        </div>
+  
+        <div class="form__size">
+          <label class="form__checkIn" for="disabledInput">Email:</label>
+          <input type="text" name="email" value="" placeholder="" class="input">
+        </div>
+  
+        <div class="form__size">
+          <label class="form__checkIn" for="disabledInput">Contraseña:</label>
+          <input type="text" name="contrasenna" value="" placeholder="********" class="input">
+        </div>
+  
+        <div class="form__size">
+          <label class="form__checkIn" for="disabledInput">Telefono:</label>
+          <input type="text" name="telefono" value="" placeholder="########" class="input">
+        </div>
+  
+        <div class="form__size">
+          <label class="form__checkIn" for="disabledInput">Provincia:</label>
+          <input type="text" name="provincia" value="" placeholder="" class="input">
+        </div>
+  
+        <button type="submit" idea="btnGuarda" class="form__btncheckIn">Guardar</button>
+  
+      </form>
+  
+  </section>
+</article>
+<%- include ('masterPage/footer') %>

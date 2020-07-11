@@ -1,0 +1,110 @@
+<%- include ('masterPage/headerAdmin') %>
+
+<h3 class="title">Registrar nuevo restaurante</h3>
+
+<article class="grid_container">
+
+  <section class=" container container__color container__login container--sizeCheckIn">
+  
+
+    <form action="/add" method="post" class="form">
+      
+      
+      
+      <div class="form__size">
+        <label class="form__checkIn" for="disabledInput">Cedula juridica:</label>
+        <input type="text" name="cedulaJuridica" value="" placeholder="" class="input">
+      </div>
+
+      <div class="form__size">
+        <label class="form__checkIn" for="disabledInput">Nombre comercial:</label>
+        <input type="text" name="nombreComercial" value="" placeholder="Juan Perez" class="input">
+      </div>
+
+
+      <div class="form__size">
+        <label class="form__checkIn" for="disabledInput">Horas habiles:</label>
+      <div class="input input__combox">
+
+        <select name="select" class=" ">
+            <%for(var i = 0; i < 12; i++) {%>
+                <option value="value1"><%= i + 1 %> :00</option> 
+            <%}%>
+        </select>
+
+        
+
+        <select name="select" class=" ">
+            <%for(var i = 0; i < 12; i++) {%>
+                <option value="value1"  class=""><%= i + 1 %> :00</option> 
+            <%}%>
+        </select>
+      </div>
+        
+
+      </div>
+
+      <div class="form__size">
+        <label class="form__checkIn" for="disabledInput">Telefono:</label>
+        <input type="text" name="telefono" value="" placeholder="########" class="input">
+      </div>
+
+      <div class="form__size">
+        <label class="form__checkIn" for="disabledInput">Direccion:</label>
+        <input type="text" name="direciion" value="" placeholder="" class="input">
+      </div>
+
+      <div class="form__size">
+        <label class="form__checkIn" for="disabledInput">Descripcion:</label>
+        <input type="text" name="descripcion" value="" placeholder="" class="input">
+      </div>
+        
+      </div>
+
+      <button type="submit" idea="btnGuarda" class="form__btncheckIn">Guardar</button>
+
+    </form>
+
+</section>
+
+  <section class="grid_container main1 ">
+
+              <table class="tableUser tableUser__user ">
+                <thead>
+                  <tr >
+                    <th class="tableUser__th">N°</th>
+                    <th class="tableUser__th">Cedula juridica</th>
+                    <th class="tableUser__th">Nombre comercial</th>
+                    <th class="tableUser__th">Horas habiles</th>
+                    <th class="tableUser__th">Telefono</th>
+                    <th class="tableUser__th">Direccion</th>
+                    <th class="tableUser__th">Descripcion</th>
+                    <th class="tableUser__th">Accion</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  
+                  <%for(var i = 0; i < 5; i++) {%>
+                    <tr>
+                      <td class="tableUser__t"></td>
+                      <td class="tableUser__t"></td>
+                      <td class="tableUser__t"></td>
+                      <td class="tableUser__t"></td>
+                      <td class="tableUser__t"></td>
+                      <td class="tableUser__t"></td>
+                      <td class="tableUser__t"></td>
+                      <td class="tableUser__t"><a href="#" class="tableUser__user--delete">Eliminar</a>
+                        <a href="#" class="tableUser__user--update">Modificar</a>
+                      </td>
+
+                    </tr>
+                  <%}%>
+               
+              </tbody>
+
+                
+              </table>
+      </section>
+</article>
+<%- include ('masterPage/footer') %>

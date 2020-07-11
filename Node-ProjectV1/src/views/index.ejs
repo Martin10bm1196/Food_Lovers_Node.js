@@ -1,0 +1,103 @@
+
+
+<%- include ('masterPage/header') %>
+
+<section id="section-main">
+
+            <section id="section-image">
+               <div  id="img" class="imagen1"></div>
+                   <div class="__buttons">
+                      <center>
+                        <button class="__button" onclick="cambiarImg1()">La Hoguera</button>
+                        <button class="__button" onclick="cambiarImg2()">El Molino</button>
+                        <button class="__button" onclick="cambiarImg3()">Cocolandia</button>
+                        <button class="__button" onclick="cambiarImg4()">Food House</button>
+                      </center>               
+                   </div>
+           </section>
+
+            <section id="section-cards">
+                <center> <h5><a href="/restaurants"><u><b>Ver más restaurantes</b></u></a></h5> 
+                  <div class="__card"> 
+                  <div class="__subCard"><div class="__logo"><i class="zmdi zmdi-cocktail"></i></div><div class="__text">Mira todos los restaurantes que te ofrece  está página.</div></div>
+                  <div class="__subCard"><div class="__logo"> <i class="zmdi zmdi-account-circle"></i></div><div class="__text">Busca el que necesites,<a href="/"><u><b> Crea una cuenta</b></u></a>, fácil y gratis</div></div>
+                  <div class="__subCard"><div class="__logo"> <i class="zmdi zmdi-cutlery"></i></div><div class="__text">Y reserva tú restaurante preferido</div></div>
+                  </div>
+               </center>
+            </section>
+
+            <section id="section-information">
+               <!-- <div class="__card">
+                  <div class="__cardImage"></div>
+                  <div class="__cardInformation">
+                     <p>Con la ayuda de esta
+                        página encuentra el 
+                       restaurante más cercano,
+                        para disfrutar en familia. 
+                       Te damos alternativas, para
+                        encontrar lo que buscas.</p>
+                     <a href="/"><u>Registrate y reserva</u></a>
+                  </div>
+               </div> -->
+
+               <div class="card mb-3 section-op">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <div class="__cardImage"></div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-text">Con la ayuda de esta
+                           página encuentra el 
+                           restaurante más cercano,
+                           para disfrutar en familia. 
+                           Te damos alternativas, para
+                           encontrar lo que buscas.</p>
+                           <a href="/registroU"><u>Registrate y reserva</u></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </section>
+
+</section>
+<%- include ('masterPage/footer') %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <script>
+     function cambiarImg1 (){
+
+        $("#img").removeClass();
+        $("#img").addClass("imagen1");
+        
+     }
+     function cambiarImg2 (){
+
+        $("#img").removeClass();
+        $("#img").addClass("imagen2");
+     }
+     function cambiarImg3 (){
+
+        $("#img").removeClass();
+        $("#img").addClass("imagen3");
+     }
+     function cambiarImg4 (){
+
+        $("#img").removeClass();
+        $("#img").addClass("imagen4");
+     }
+
+
+ </script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+   
+</body>
+</html>
+
+
+

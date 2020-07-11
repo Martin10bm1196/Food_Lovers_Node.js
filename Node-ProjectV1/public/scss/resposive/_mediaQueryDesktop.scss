@@ -1,0 +1,95 @@
+@media(min-width: 1100px) {
+  .grid_container{
+    grid-template:
+    'header ' 20px
+    'nav '    10px
+    'mai '    350px
+    'mai1'    auto
+    'footer ' 100px/
+      100%;
+  } 
+
+  .grid_containerUser{
+    grid-template:
+    'header ' 20px
+    'nav '    10px
+    'mai '    350px
+    'footer ' 100px/
+      auto;
+    
+  }
+
+
+.main{
+  &__addUser{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+}
+
+  .form{
+      
+    &__button{
+      position: absolute;
+      left: 60%;
+      width: 15%;
+      height: 100px;
+      border-radius: 30px;
+      font-size: 18px;
+      color: white;
+      background-color: black;
+    }
+
+    &__btncheckIn{
+      left: 58%;
+    }
+
+    &__checkIn{
+      position: relative;
+      left: 15%;
+      top: 14px;
+    }
+
+ 
+
+      &__input{  
+        position: relative;  
+        left: 90%;  
+        margin-left: 100px;
+      }
+
+    }
+    .input{
+      width: 23%;
+      margin-left: 45%;
+      
+    }
+    
+
+    .tableUser{
+      width: 100%;
+      font-size: 20px;
+
+        &__t{
+          
+          height: 40px;
+          border: solid 1px black;
+        }      
+
+        &__Rest{
+          width: 100px;
+          height: 40px;
+          border: solid 10xp #000000;;
+        }
+        
+    }
+
+    
+    .container{
+        
+        background-color: rgb(148, 208, 236);
+        box-shadow: 5px 7px rgb(72, 104, 194);   
+    }
+    
+    } 

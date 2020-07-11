@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Lovers</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+
+<%- include ('masterPage/header') %>
+
+<article
+  <h1>Modificar usuario</h1>
+
+  <div class="">
+    <form action="/update/<%= data.cedula%>" method="post">
+
+      <div class="col-sm-2 col-form-label">
+        <label class="col-sm-2 col-form-label" for="disabledInput">Cedula:</label>
+        <input type="text" name="cedula" value="<%= data.cedula%>" placeholder="" class="form-control">
+      </div>
+
+      <div class="col-sm-2 col-form-label">
+        <label class="control-label" for="disabledInput">Nombre completo:</label>
+        <input type="text" name="nombreCompleto" value="<%= data.nombreCompleto%>" placeholder="Juan Perez" class="form-control">
+      </div>
+
+      <div class="col-sm-2 col-form-label">
+        <label class="control-label" for="disabledInput">Email:</label>
+        <input type="text" name="email" value="<%= data.email%>" placeholder="" class="form-control">
+      </div>
+
+      <div class="col-sm-2 col-form-label">
+        <label class="control-label" for="disabledInput">Contraseña:</label>
+        <input type="text" name="contrasenna" value="<%= data.contrasenna%>" placeholder="********" class="form-control">
+      </div>
+
+      <div class="col-sm-2 col-form-label">
+        <label class="control-label" for="disabledInput">Telefono:</label>
+        <input type="text" name="telefono" value="<%= data.telefono%>" placeholder="########" class="form-control">
+      </div>
+
+      <div class="col-sm-2 col-form-label">
+        <label class="control-label" for="disabledInput">Provincia:</label>
+        <input type="text" name="provincia" value="<%= data.provincia%>" placeholder="" class="form-control">
+      </div>
+
+      <div class="col-sm-8 col-form-label">
+        <label class="control-label" for="disabledInput">Roll:</label>
+        <label><input type="checkbox" name="check" id="cbox1" value="Administrador"> Administrador</label>
+        <label><input type="checkbox" name="check" value="Cliente"> Cliente</label><br>
+      </div>
+      <div class="col-sm-2 col-form-button">
+        <button type="submit" idea="btnGuarda" class="btn btn-primary row mt-3">Modificar</button>
+      </div>
+      
+
+    </form>
+  </div>
+</article>
+<%- include ('masterPage/footer') %>

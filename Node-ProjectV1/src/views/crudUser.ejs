@@ -1,0 +1,103 @@
+
+<%- include ('masterPage/headerAdmin') %>
+
+<h3 class="title">Registro usuarios</h3>
+<article class="grid_container">
+  
+
+  <section class=" container container__color container__login container--sizeCheckIn">
+  
+
+    <form action="/add" method="post" class="form">
+      
+      
+      
+      <div class="">
+        <label class="form__checkIn" for="disabledInput">Cedula:</label>
+        <input type="text" name="cedula" value="" placeholder="" class="input">
+      </div>
+
+      <div class="">
+        <label class="form__checkIn" for="disabledInput">Nombre completo:</label>
+        <input type="text" name="nombreCompleto" value="" placeholder="Juan Perez" class="input">
+      </div>
+
+      <div class="">
+        <label class="form__checkIn" for="disabledInput">Email:</label>
+        <input type="text" name="email" value="" placeholder="" class="input">
+      </div>
+
+      <div class="">
+        <label class="form__checkIn" for="disabledInput">Contraseña:</label>
+        <input type="text" name="contrasenna" value="" placeholder="********" class="input">
+      </div>
+
+      <div class="">
+        <label class="form__checkIn" for="disabledInput">Telefono:</label>
+        <input type="text" name="telefono" value="" placeholder="########" class="input">
+      </div>
+
+      <div class="">
+        <label class="form__checkIn" for="disabledInput">Provincia:</label>
+        <input type="text" name="provincia" value="" placeholder="" class="input">
+      </div>
+
+      <div class="">
+        <label class="form__checkIn" for="disabledInput">Roll:</label>
+        <div class="input">
+          <br>
+          <label class=""><input type="checkbox" name="check" id="cbox1" value="Administrador" class="">Administrador</label>
+          <br>
+          <br>
+          <label class=""><br><input type="checkbox" name="check" value="Cliente" class=""> Cliente</label><br>
+        </div>
+        
+      </div>
+
+      <button type="submit" idea="btnGuarda" class="form__btncheckIn">Guardar</button>
+
+    </form>
+
+</section>
+
+  <section class="grid_container main1 ">
+
+              <table class="tableUser tableUser__user">
+                <thead class="">
+                  <tr >
+                    <th class="tableUser__th">N°</th>
+                    <th class="tableUser__th">Cedula</th>
+                    <th class="tableUser__th">Nombre completo</th>
+                    <th class="tableUser__th">Email</th>
+                    <th class="tableUser__th"> Contraseña</th>
+                    <th class="tableUser__th">Telefono</th>
+                    <th class="tableUser__th">Provincia</th>
+                    <th class="tableUser__th">Roll</th>
+                    <th class="tableUser__th">Accion</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <%if(data) {%>
+                    <%for(var i = 0; i < data.length; i++) {%>
+                      <tr>
+                        <td class="tableUser__t"><%= i + 1 %></td>
+                        <td class="tableUser__t"><%= data[i].cedula %></td>
+                        <td class="tableUser__t"><%= data[i].nombreCompleto %></td>
+                        <td class="tableUser__t"><%= data[i].email %></td>
+                        <td class="tableUser__t"><%= data[i].contrasenna %></td>
+                        <td class="tableUser__t"><%= data[i].telefono %></td>
+                        <td class="tableUser__t"><%= data[i].provincia %></td>
+                        <td class="tableUser__t"><%= data[i].roll %></td>
+                        <td class="tableUser__t"><a href="/delete/<%= data[i].cedula%>" class="tableUser__user--delete">Eliminar</a>
+                          <a href="/update/<%= data[i].cedula%>" class="tableUser__user--update">Modificar</a>
+                        </td>
+
+                      </tr>
+                    <%}%>
+                  <%}%>
+                </tbody>
+              </table>
+      </section>
+</article>
+<%- include ('masterPage/footer') %>

@@ -1,0 +1,16 @@
+@import 'abstract/variables';
+@import 'base/_reset';
+@import 'base/_typography.scss';
+@import 'components/_article';
+@import 'components/_paragraphs';
+@import 'components/_button';
+@import 'components/_imagen';
+@import 'layout/_footer';
+@import 'layout/_header';
+@import 'layout/_center';
+@import 'layout/_navigation';
+@import 'resposive/_mediaQueryTablet';
+@import 'resposive/_mediaQueryPhone';
+@import 'resposive/_mediaQueryDesktop';
+
+

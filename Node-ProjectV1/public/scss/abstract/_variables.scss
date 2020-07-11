@@ -1,0 +1,97 @@
+.__card {
+   display: flex;
+   min-height: inherit;
+   
+}
+#section-cards {
+    background: white;
+    padding: 20px 0px;
+    min-height: 300px;
+}
+.__subCard {
+    width: 33%;
+    height: auto;
+    display: inline-block;
+    padding: 20px;
+}
+
+.__text {
+    width: 100%;
+    
+}
+
+
+.__cardInformation{
+    width: 40%;
+    text-align: center;
+    padding: 100px 20px 100px 20px;
+
+}
+
+#section-information {
+    background: black;
+    min-height: 300px;
+}
+
+.__cardLogin{
+    width: 20%;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#section-header{
+    background: #343a40;
+}
+
+.color-white{
+    color: white !important;
+}
+///
+.__cardLogo{
+    width: 80%;
+    height: 80px;
+    background: white;
+}
+
+#section-information1 {
+    background: white;
+    min-height: 300px;
+}
+
+.__cardImg{
+    width: 65%;
+}
+
+.__cardAboutUs--information{
+    width: 35%;
+    text-align: center;
+    padding: 100px 20px 100px 20px;
+}
+
+#section-contact {
+    background: white;
+    min-height: 400px;
+    width: 100%;
+    margin-top: -16px;
+ 
+}
+
+#section-help {
+    background: white;
+    min-height: 400px;
+    width: 100%;
+    margin-top: -16px;
+
+}
+
+._row{
+    height: 400px;
+}
+
+.section-op{
+    background:  #87CCD0 !important;
+}
+
+

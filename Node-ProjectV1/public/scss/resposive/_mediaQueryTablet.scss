@@ -1,0 +1,56 @@
+@media(min-width: 700px) {
+  .form{
+
+    &__button{
+      left: 75%;
+      width: 15%;
+    }
+
+    &__btncheckIn{
+      left: 65%;
+    }
+
+    &__position{
+        position: relative;
+        left: 20%;
+        top: 14px;
+      }
+
+      &__checkIn{
+        position: relative;
+        left: 40%;
+        top: 14px;
+      }
+
+      &__input{
+        top: 25px;
+        margin-left: 400px;
+      }
+
+      
+
+    }
+
+    
+    .input{
+      margin-left: 70%;
+    }
+
+    .tableUser{
+      &__t{
+        width: 40px;
+        font-size: 13px;
+        border: solid 1px black;
+      }
+    }
+
+    .container{
+
+      background-color: rgb(124, 231, 226);
+      box-shadow: 5px 7px rgb(40, 144, 158);
+  
+     }
+
+  }
+
+    
